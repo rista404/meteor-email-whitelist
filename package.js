@@ -10,6 +10,7 @@ Package.onUse(function(api) {
 	api.versionsFrom("1.2.0.1");
 
 	// Core packages and 3rd party packages
+	api.use("underscore");
 
 	// The files of this package
 	api.addFiles("server/index.js", ["server"]);
