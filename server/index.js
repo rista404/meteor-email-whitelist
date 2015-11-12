@@ -14,4 +14,4 @@ Accounts.validateNewUser(function (user) {
 	else
 		throw new Meteor.Error(401, "You're not invited to join, sorry.");
 
-}
+});

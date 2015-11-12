@@ -5,18 +5,16 @@ Package.describe({
 	git: "https://github.com/rista404/meteor-email-whitelist"
 });
 
-Package.onUse(function(api) {
+Package.onUse(function (api) {
 	// Meteor releases below this version are not supported
 	api.versionsFrom("1.2.0.1");
 
 	// Core packages and 3rd party packages
-	api.use("underscore");
+	api.use("underscore", 'server');
+	api.use("accounts-base", 'server');
 
 	// The files of this package
 	api.addFiles("server/index.js", ["server"]);
-
-	// The variables that become global for users of your package
-	api.export("log", ["server"]);
 });
 
 Package.onTest(function (api) {
