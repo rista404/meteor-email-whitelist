@@ -1,3 +1,3 @@
 Tinytest.add("email-whitelist", function (test) {
-  test.equal(true, true);
+	test.equal(true, true);
 });

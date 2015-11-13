@@ -1,4 +1,12 @@
-# rista404:email-whitelist
+# Email Whitelist
 
-Make sure that only unicorns :rainbow: with specific email addresses can register to your app. Great for testing and beta access!
+Restrict registration to a list of email addresses
+
+```sh
+meteor add rista404:email-whitelist
+```
+
+This package is currently in a working state, but without tests and aditional functionality.
+
+
 
