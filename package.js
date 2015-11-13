@@ -1,7 +1,7 @@
 Package.describe({
 	name: "rista404:email-whitelist",
-	summary: "Restrict registration application to a whitelist of email addresses.",
-	version: "0.1.0",
+	summary: "Restrict registration to a whitelist of email addresses.",
+	version: "0.2.0",
 	git: "https://github.com/rista404/meteor-email-whitelist"
 });
 
@@ -12,9 +12,11 @@ Package.onUse(function (api) {
 	// Core packages and 3rd party packages
 	api.use("underscore", 'server');
 	api.use("accounts-base", 'server');
+	api.use("accounts-password", 'server');
 
 	// The files of this package
-	api.addFiles("server/index.js", ["server"]);
+	api.addFiles(["server/email-whitelist.js", "server/validation.js"], ["server"]);
+	api.export(['emailWhitelisted']);
 });
 
 Package.onTest(function (api) {

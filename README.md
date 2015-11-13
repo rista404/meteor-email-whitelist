@@ -8,7 +8,7 @@ meteor add rista404:email-whitelist
 
 # Instructions
 
-Just add invitedEmails array inside your settings.json file.
+Just add private `invitedEmails` array inside your settings.json file.
 
 Example:
 
