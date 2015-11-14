@@ -1,6 +1,6 @@
 # Email Whitelist
 
-Restrict registration to a list of email addresses
+Restrict registration to a list of email addresses.
 
 ```sh
 meteor add rista404:email-whitelist
@@ -29,7 +29,7 @@ meteor --settings settings.json
 
 # Notice
 
-This package is currently in a working state, but without tests and aditional functionality.
+This package is currently in a working state, but not thoroughly tested.
 
 
 
